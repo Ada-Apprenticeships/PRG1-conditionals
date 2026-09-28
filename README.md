@@ -1,56 +1,46 @@
-# Python Conditionals — PRIMM Learning Activities
+# PRG1: Conditionals (PRIM activities)
 
-Python code examples and activities for learning conditional statements
-using the **PRIMM methodology** (Predict, Run, Investigate, Modify, Make).
+Day 3, session 1. Four activities, each in its own folder, code and tasks together.
 
-## How this repo is organised
+## PRIM
 
-The material is split into three levels, each in its own file:
+| Step | What you do |
+|---|---|
+| **Predict** | Say what the code will do **before** you run it. Write it down. |
+| **Run** | Run it. Compare against your prediction. |
+| **Investigate** | Work out *why* it behaves that way. |
+| **Modify** | Change something specific, predicting the effect before each change. |
 
-| Level | File | README | Style |
-|---|---|---|---|
-| Beginner | `beginner.py` | `README_beginner.md` | Guided PRIMM activities |
-| Intermediate | `intermediate.py` | `README_intermediate.md` | Guided PRIMM activities |
-| Advanced | `advanced.py` | *(see the file itself)* | Open-ended exploration |
+The first three steps are the point. Work in pairs, and swap who drives at each
+new activity.
 
-**Start with the beginner file.** Only move on once you're comfortable —
-each level assumes you understand everything from the one before it.
+## The activities
 
-## What each level covers
+| Folder | Focus |
+|---|---|
+| `activity-1-which-branch-runs/` | Which branch runs, and why order matters |
+| `activity-2-boundaries/` | What happens exactly on the edge |
+| `activity-3-and-or-not/` | Combining conditions |
+| `activity-4-broken-conditionals/` | Three faults in code that runs |
 
-**Beginner** — `if`, `elif`, `else`, comparison operators (`>`, `<`, `==`, `!=`, `>=`, `<=`), and the modulo operator (`%`).
+Activity 2 is the one that matters most. Nearly every conditional fault you will
+meet, lives on a boundary.
 
-**Intermediate** — logical operators (`and`, `or`, `not`), input validation, the ternary operator (one-line `if/else`), and `match`/`case` with simple values.
+## If you finish
 
-**Advanced** — complex validation logic, `any()` and `all()`, multi-input decision making, and `match`/`case` for command handling. This level is exploration rather than structured PRIMM.
+| Folder | Focus |
+|---|---|
+| `stretch-1-reading-match-case/` | Reading a construct you will not be asked to write |
+| `stretch-2-unreachable-branches/` | Finding branches that can never run |
 
-## Getting started
+Activity 2 also carries an optional **Make** at the end. None of this is
+expected. Reach it only once the four core activities are genuinely done, which
+means you can explain them, not just that you ran them.
 
-1. Clone or download this repository.
-2. Open `beginner.py` alongside `README_beginner.md`.
-3. Work through the PRIMM activities in the README.
-4. Run the file with:
-   ```bash
-   python beginner.py
-   ```
-5. When you're ready, move on to `intermediate.py`, then `advanced.py`.
+## Running a file
 
-## The PRIMM methodology
+```
+python activity-1-which-branch-runs/grading.py
+```
 
-PRIMM is a five-step approach to learning code:
-
-- **Predict** — read the code and guess what it will do *before* running it.
-- **Run** — actually run it and compare to your prediction.
-- **Investigate** — pick the code apart; trace through it line by line.
-- **Modify** — change small bits and predict again.
-- **Make** — write your own version from scratch.
-
-The first two steps force you to engage with the code as it is; the last
-three build ownership. Skipping Predict and going straight to Run is the
-most common mistake — resist the temptation!
-
-## Additional resources
-
-- [Python docs — Control flow](https://docs.python.org/3/tutorial/controlflow.html)
-- [Python docs — match statements](https://docs.python.org/3/tutorial/controlflow.html#match-statements)
-- [Real Python — Conditional statements](https://realpython.com/python-conditional-statements/)
+If `python` is not recognised, use `python3` instead.
